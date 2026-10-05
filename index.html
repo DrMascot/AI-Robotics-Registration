@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI & Robotics Candidate Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#">AI<span>&</span>ROBOTICS</a>
+    <a class="nav-btn" href="#register">Register Now</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">CANDIDATE REGISTRATION</div>
+      <h1>Build the <span>Future</span> with AI & Robotics.</h1>
+      <p>Register your interest, share your skills and projects, and join a growing community of innovators.</p>
+      <a class="primary-btn" href="#register">Start Registration →</a>
+    </div>
+    <div class="hero-card">
+      <div class="robot-orb">AI</div>
+      <div class="mini-card"><strong>AI</strong><span>Artificial Intelligence</span></div>
+      <div class="mini-card"><strong>ROBOTICS</strong><span>Automation & Engineering</span></div>
+      <div class="mini-card"><strong>INNOVATION</strong><span>Ideas into solutions</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container feature-grid">
+    <article><div class="icon">01</div><h3>Artificial Intelligence</h3><p>Machine learning, data, computer vision, NLP and intelligent systems.</p></article>
+    <article><div class="icon">02</div><h3>Robotics</h3><p>Automation, embedded systems, sensors, control and robot design.</p></article>
+    <article><div class="icon">03</div><h3>Innovation</h3><p>Transform ideas into practical projects that solve real problems.</p></article>
+  </div>
+</section>
+
+<section id="register" class="registration">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">APPLICATION FORM</div>
+      <h2>Candidate Registration</h2>
+      <p>Your information will be submitted to the program's central Google Sheet.</p>
+    </div>
+
+    <form id="registrationForm" class="form-card">
+      <div class="form-section">
+        <h3>Personal Information</h3>
+        <div class="form-grid">
+          <label>Full Name *<input name="fullName" required placeholder="Enter your full name"></label>
+          <label>Email Address *<input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Phone Number *<input name="phone" required placeholder="+234..."></label>
+          <label>Location / City *<input name="location" required placeholder="e.g. Abuja"></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Education & Experience</h3>
+        <div class="form-grid">
+          <label>Education Level *
+            <select name="education" required>
+              <option value="">Select</option>
+              <option>Secondary School</option>
+              <option>Undergraduate</option>
+              <option>Graduate</option>
+              <option>Postgraduate</option>
+              <option>Professional / Other</option>
+            </select>
+          </label>
+          <label>Experience Level *
+            <select name="experience" required>
+              <option value="">Select</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+              <option>Professional</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>AI & Robotics Interests</h3>
+        <div class="checkbox-grid">
+          <label class="check"><input type="checkbox" name="interests" value="Artificial Intelligence"> Artificial Intelligence</label>
+          <label class="check"><input type="checkbox" name="interests" value="Machine Learning"> Machine Learning</label>
+          <label class="check"><input type="checkbox" name="interests" value="Robotics"> Robotics</label>
+          <label class="check"><input type="checkbox" name="interests" value="Computer Vision"> Computer Vision</label>
+          <label class="check"><input type="checkbox" name="interests" value="IoT"> IoT / Embedded Systems</label>
+          <label class="check"><input type="checkbox" name="interests" value="Automation"> Automation</label>
+        </div>
+        <label>Skills<textarea name="skills" maxlength="1000" placeholder="Tell us about your technical or creative skills"></textarea></label>
+        <label>Projects / Portfolio<textarea name="projects" maxlength="1500" placeholder="Describe relevant projects, links or experience"></textarea></label>
+        <label>Why do you want to participate? *<textarea name="motivation" required maxlength="1500" placeholder="Tell us your motivation"></textarea></label>
+      </div>
+
+      <div class="form-section">
+        <h3>CV / Supporting Document</h3>
+        <label>Upload CV (PDF, DOC or DOCX, maximum 5MB)
+          <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+        </label>
+        <small id="fileStatus">Optional</small>
+      </div>
+
+      <label class="consent"><input type="checkbox" name="consent" required> I confirm that the information provided is accurate and I agree to its use for candidate registration and selection.</label>
+
+      <div class="form-actions">
+        <button id="submitBtn" class="primary-btn" type="submit">Submit Registration</button>
+        <span id="status" role="status"></span>
+      </div>
+    </form>
+
+    <div id="success" class="success-card" hidden>
+      <div class="success-icon">✓</div>
+      <h2>Registration Submitted</h2>
+      <p>Thank you. Your registration has been received.</p>
+      <a class="primary-btn" href="#register" onclick="location.reload()">Submit Another Response</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container">AI & Robotics Candidate Registration</div></footer>
+<script src="script.js"></script>
+</body>
+</html>
