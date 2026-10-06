@@ -2,7 +2,7 @@
   IMPORTANT:
   Paste your deployed Google Apps Script Web App URL into GOOGLE_SCRIPT_URL below.
 */
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbylaxyUBb7VAfcX_eJw91oc4lEGet2M9fwMtIO7wNqjw7zJZhbNPzYeaNMqN1crEOA9/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZwN-wdB-kf2gtRvNOHQKclTPbDji8nuxxF9g4x0-gtn-VoPOVP3BDNHBnTe3EslaAqw/exec";
 
 const form = document.getElementById("registrationForm");
 const submitBtn = document.getElementById("submitBtn");
